@@ -37,7 +37,6 @@ class DemoBottomAppBar extends StatefulWidget {
 
 class _DemoBottomAppBarState extends State<DemoBottomAppBar>{
   int _selectedIndex = 0;
-  Color _color = Colors.white;
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
