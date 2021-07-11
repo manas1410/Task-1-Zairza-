@@ -72,3 +72,141 @@ class _DemoBottomAppBarState extends State<DemoBottomAppBar>{
   }
 }
 
+PreferredSizeWidget orderappbar(BuildContext context){
+  return AppBar(
+      backgroundColor: Colors.white,
+      toolbarHeight: 70,
+      leading: GestureDetector(
+          onTap: () {},
+          child: Icon(
+            Icons.arrow_back_ios,
+            color: Colors.black,
+          ),
+        ),
+      title: Align(
+        alignment:  Alignment.center,
+
+        child: Text(
+          "Your Orders",
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.black,
+          ),
+        ),
+      ),
+
+  );
+}
+
+PreferredSizeWidget profileappbar(BuildContext context){
+  return AppBar(
+    backgroundColor: Colors.white,
+    toolbarHeight: 70,
+    leading: GestureDetector(
+      onTap: () {},
+      child: Icon(
+        Icons.arrow_back_ios,
+        color: Colors.black,
+      ),
+    ),
+    title: Align(
+      alignment:  Alignment.center,
+
+      child: Text(
+        "Your Orders",
+        style: TextStyle(
+          fontSize: 30,
+          color: Colors.black,
+        ),
+      ),
+    ),
+
+  );
+}
+
+InputDecoration textFieldInputDecoration(String xtext){
+  return InputDecoration(
+    hintText: xtext,
+    border: OutlineInputBorder(),
+  );
+}
+
+TextStyle simpleTextFieldStyle(){
+  return TextStyle(
+    fontSize: 16,
+  );
+}
+
+TextStyle mediumTextFieldStyle(){
+  return TextStyle(
+    fontSize: 17,
+  );
+}
+TextStyle mdTextFieldStyle(){
+  return TextStyle(
+      fontSize: 23,
+      color: Colors.black,
+      fontWeight: FontWeight.bold
+  );
+}
+
+PreferredSizeWidget skill1appbar(BuildContext context){
+  return AppBar(
+      backgroundColor: Colors.white,
+      toolbarHeight: 70,
+      leading: GestureDetector(
+        onTap: () {},
+        child: Icon(
+          Icons.arrow_back_ios,
+          color: Colors.black,
+        ),
+      ),
+      title: Align(
+        alignment:  Alignment.center,
+        child: Text(
+          "SkillKart",
+          style: TextStyle(
+            fontSize: 30,
+            color: Colors.black,
+          ),
+        ),
+      ),
+      actions: <Widget>[
+        Padding(
+            padding: EdgeInsets.only(right: 10.0),
+            child: GestureDetector(
+              onTap: () {},
+              child: IconButton(
+                icon: const Icon(Icons.shopping_cart_rounded,color: Colors.black,),
+                onPressed: () {},
+              ),
+            )
+        ),
+      ]
+  );
+}
+PreferredSizeWidget profile1appbar(BuildContext context){
+  return AppBar(
+    backgroundColor: Colors.white,
+    toolbarHeight: 70,
+    leading: GestureDetector(
+      onTap: () {},
+      child: Icon(
+        Icons.arrow_back_ios,
+        color: Colors.black,
+      ),
+    ),
+    title: Align(
+      alignment:  Alignment.centerLeft,
+
+      child: Text(
+        "           Profile",
+        style: TextStyle(
+          fontSize: 30,
+          color: Colors.black,
+        ),
+      ),
+    ),
+
+  );
+}

@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:task_1_zairza/screens/2_A.dart';
 import 'package:task_1_zairza/screens/2_B.dart';
+import 'package:task_1_zairza/screens/3.dart';
+import 'package:task_1_zairza/screens/4.dart';
+import 'package:task_1_zairza/screens/7.dart';
+import 'package:task_1_zairza/screens/Signin.dart';
+import 'package:task_1_zairza/screens/Signup.dart';
 import 'package:task_1_zairza/screens/welcome.dart';
 
 void main() {
@@ -17,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Page2B(),
+      home: Page7(),
     );
   }
 }

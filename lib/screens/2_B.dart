@@ -52,7 +52,7 @@ class _Page2BState extends State<Page2B>{
                     child: Wrap(
                       children: List.generate(20, (index) {
                         return Padding(
-                          padding: EdgeInsets.only(left:10,bottom: 10,right: 10),
+                          padding: EdgeInsets.only(left:20,bottom: 20,right: 20),
                           child: Column(
                             children: [
                               Container(
@@ -60,10 +60,10 @@ class _Page2BState extends State<Page2B>{
                                     borderRadius: BorderRadius.circular(10),
                                     boxShadow:  [
                                       BoxShadow(
-                                        color: Colors.grey.withOpacity(0.5),
+                                        color: Colors.white.withOpacity(1),
                                         spreadRadius: 5,
-                                        blurRadius: 7,
-                                        offset: Offset(0, 3), // changes position of shadow
+                                        blurRadius: 0,
+                                        offset: Offset(0, 1), // changes position of shadow
                                       ),
                                     ],
                                     border: Border.all(
@@ -73,24 +73,29 @@ class _Page2BState extends State<Page2B>{
                                   ),
                                   child: Row(
                                       children:<Widget>[
-                                        Image(image: AssetImage('assets/images/image 1.png'),),
+                                        Image(image: AssetImage('assets/images/imagefull.png'),),
                                         Column(
                                           children: [
-                                            Padding(padding:EdgeInsets.only(left:100,bottom: 10),
+                                            Padding(padding:EdgeInsets.only(left:10,bottom: 10),
                                                 child: Column(
                                                   children: [
-                                                    Text('Zairza',style: TextStyle(fontSize: 20,color:Colors.black),),
-                                                    Text('Zairza',style: TextStyle(fontSize: 20,color:Colors.black),),
+                                                    Text('Laptop',style: TextStyle(fontSize: 28,color:Colors.black),),],)),
+                                                    Text('Zairza',
+                                                      style: TextStyle(fontSize: 10,color:Colors.black),
+                                                      textAlign: TextAlign.left,
+                                                    ),
+                                                    SizedBox(height: 30,),
+                                                    Text("\$3000",style: TextStyle(fontSize: 20,color:Colors.black),)
                                                   ],
                                                 )
-                                            ),
+
 
                                           ],
                                         )
-                                      ]
+
                                   )
 
-                              ),
+
 
 
                             ],
